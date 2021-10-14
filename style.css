@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: #7fdeff; */
+    background-image: url("pokeball.jpeg");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pokemon-title {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.pokemonCard {
+    width: 300px;
+    height: 300px;
+    margin: 0.8rem;
+    animation-name: pokeMoves;
+    animation: fadeIn 3s;
+    -webkit-animation: pokeMoves 2s
+}
+
+@keyframes pokeMoves {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
